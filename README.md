@@ -1,172 +1,120 @@
-# Sistema Centralizado de Actualización y Mantenimiento de Estaciones de Trabajo
+# Herramienta de Actualizacion y Mantenimiento del Sistema
 
-> **Plataforma integral y automatizada para la orquestación del ciclo de vida de software, sincronización de controladores de hardware, saneamiento de almacenamiento y fortalecimiento de la postura de seguridad operativa en entornos de escritorio corporativos y personales.**
-
----
-
-## 📋 Tabla de Contenidos
-
-1. [Visión General del Proyecto](#-visión-general-del-proyecto)
-2. [¿Qué Hace el Sistema?](#-qué-hace-el-sistema)
-3. [¿Por Qué es Crucial este Proyecto? (Valor Estratégico y de Seguridad)](#-por-qué-es-crucial-este-proyecto-valor-estratégico-y-de-seguridad)
-4. [Módulos y Capacidades Funcionales](#-módulos-y-capacidades-funcionales)
-5. [Flujos Operativos y Modos de Ejecución](#-flujos-operativos-y-modos-de-ejecución)
-6. [Guía de Despliegue y Puesta en Marcha](#-guía-de-despliegue-y-puesta-en-marcha)
-7. [Roadmap Estratégico y Futuras Integraciones](#-roadmap-estratégico-y-futuras-integraciones)
-8. [Políticas de Gobernanza y Mantenimiento](#-políticas-de-gobernanza-y-mantenimiento)
-9. [Créditos y Autoría](#-créditos-y-autoría)
+Solucion integral disenada para automatizar el mantenimiento preventivo, la actualizacion de controladores y programas, y la recuperacion de espacio en disco en computadoras de trabajo y personales.
 
 ---
 
-## 🌟 Visión General del Proyecto
+## Indice de Contenido
 
-En la gestión moderna de infraestructuras informáticas, las estaciones de trabajo representan el eslabón más dinámico y, a la vez, el vector de ataque más vulnerable dentro de cualquier ecosistema tecnológico. La dispersión de versiones en aplicaciones de uso diario, el desfase en controladores críticos de hardware y la acumulación desenfrenada de datos temporales residuales impactan de forma negativa tanto en el rendimiento operativo como en la seguridad de la información.
-
-Este proyecto nace como una **solución unificada de ingeniería de software** diseñada para eliminar la fragmentación y la fricción del mantenimiento preventivo. A través de un motor centralizado de orquestación, la herramienta diagnostica, sincroniza y optimiza los componentes vitales del equipo, garantizando que cada estación opere con los más altos estándares de rendimiento, compatibilidad y resiliencia.
-
----
-
-## ⚙️ ¿Qué Hace el Sistema?
-
-El sistema consolida en un único flujo de trabajo todas las dimensiones críticas del mantenimiento de una estación de cómputo:
-
-* **Sincronización Total de Controladores y Firmware:** Identifica, descarga e implementa de manera desatendida las versiones oficiales más recientes de controladores de hardware esenciales (tarjetas gráficas, interfaces de red, procesadores, subsistemas de audio y periféricos).
-* **Gestión Centralizada del Ciclo de Vida de Aplicaciones:** Examina el catálogo completo de software instalado en el equipo, detecta versiones obsoletas y ejecuta despliegues silenciosos de actualización masiva para herramientas de ofimática, navegadores, entornos de ingeniería y software especializado.
-* **Saneamiento Profundo y Recuperación de Espacio en Almacenamiento:** Ejecuta rutinas de limpieza granular sobre depósitos de archivos temporales del usuario y del sistema operativo, suprime cachés de instaladores residuales y purga registros de resolución de red obsoletos.
-* **Control Inteligente de Seguridad y Elevación de Privilegios:** Evalúa dinámicamente el nivel de autorización del contexto operativo, solicitando los privilegios administrativos estrictamente necesarios para tareas a nivel de sistema sin interrumpir la experiencia de usuario.
-* **Gobernanza de Exclusiones:** Aplica filtros preventivos para proteger software de misión crítica o motores de bases de datos que requieran ventanas de mantenimiento programadas o intervención manual.
+1. Proposito del Proyecto
+2. Que Hace la Herramienta
+3. Por Que es Importante
+4. Modos de Operacion
+5. Instrucciones de Uso
+6. Proximas Integraciones y Mejoras
+7. Criterios de Seguridad y Buen Uso
+8. Creditos
 
 ---
 
-## 🛡️ ¿Por Qué es Crucial este Proyecto? (Valor Estratégico y de Seguridad)
+## 1. Proposito del Proyecto
 
-### 1. Mitigación Proactiva de Brechas de Seguridad (Zero-Day & CVE Vulnerability Management)
-Más del **70% de los incidentes de ciberseguridad** en endpoints se originan a través de vulnerabilidades ya conocidas en software de terceros o controladores desactualizados que carecen de los parches de seguridad más recientes. Esta herramienta mitiga activamente la superficie de exposición al automatizar la adopción inmediata de actualizaciones críticas.
+En el dia a dia, la mayoria de las personas y equipos de trabajo descuidan el mantenimiento basico de sus computadoras. Con el paso de los meses, los programas quedan obsoletos, los controladores de hardware dejan de recibir mejoras del fabricante y el disco duro se llena de archivos temporales que ya no sirven.
 
-### 2. Estabilidad de Infraestructura y Prevención de Fallos Críticos (BSOD)
-Los desfases entre el núcleo del sistema operativo y los controladores de dispositivos son el factor principal de errores de parada en pantalla azul (*Blue Screen of Death*), bloqueos de bus PCI/USB y cuellos de botella en procesamiento gráfico o rendimiento de red. Mantener los controladores al día asegura una interoperabilidad de hardware óptima.
+Esto provoca lentitud, errores inesperados, problemas de compatibilidad y riesgos de seguridad. Realizar este proceso de forma manual requiere abrir aplicacion por aplicacion, buscar controladores en internet y revisar carpetas ocultas del sistema, lo cual consume demasiado tiempo.
 
-### 3. Recuperación de Activos de Almacenamiento y Rendimiento
-La acumulación silenciosa de gigabytes de instaladores en caché, archivos temporales huérfanos y fragmentos de descargas inconclusas satura las unidades de estado sólido de alta velocidad, mermando los ciclos de lectura/escritura y provocando lentitud general en las actividades cotidianas del usuario.
-
-### 4. Reducción Drástica de Costos de Soporte y Helpdesk
-Los equipos de administración de sistemas y soporte TI suelen dedicar cientos de horas al año a tareas manuales, reactivas y repetitivas de actualización y limpieza. Al estandarizar estos procesos en una rutina automatizada, se optimiza el tiempo del personal técnico para tareas de mayor valor estratégico.
-
-### 5. Higiene de Red y Resolución de Conectividad
-La purga programada de las tablas de resolución de nombres de dominio resuelve conflictos de latencia, direccionamiento estancado y fallos intermitentes de conexión con servicios corporativos o nubes privadas.
+Este proyecto fue creado para resolver ese problema de raiz: centralizar y automatizar todas esas tareas en una sola herramienta, para que cualquier usuario o administrador pueda dejar su equipo al dia en cuestion de minutos con un solo clic.
 
 ---
 
-## 🧩 Módulos y Capacidades Funcionales
+## 2. Que Hace la Herramienta
 
-El diseño del proyecto se rige por una arquitectura modular de responsabilidades claras:
+La herramienta organiza el mantenimiento de la computadora en tres tareas principales:
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│        SISTEMA CENTRAL DE ACTUALIZACIÓN Y MANTENIMIENTO         │
-├─────────────────┬─────────────────┬─────────────────────────────┤
-│   MÓDULO DE     │   MÓDULO DE     │   MÓDULO DE SANEAMIENTO     │
-│  CONTROLADORES  │  APLICACIONES   │      Y ALMACENAMIENTO       │
-│  ─────────────  │  ────────────   │   ──────────────────────    │
-│  • Escaneo HW   │  • Catálogo     │   • Temporales Sistema/User │
-│  • Firmware     │  • Despliegue   │   • Caché de Instaladores   │
-│  • Audio/Red/GPU│  • Exclusiones  │   • Purga DNS y Papelera    │
-├─────────────────┴─────────────────┴─────────────────────────────┤
-│         MOTOR DE CONTROL DE PRIVILEGIOS Y SEGURIDAD             │
-└─────────────────────────────────────────────────────────────────┘
-```
-
-* **Módulo de Gobernanza de Privilegios:** Supervisa los permisos de ejecución del entorno, previniendo fallos por accesos denegados y orquestando la elevación segura hacia el anillo de administración.
-* **Módulo de Salud de Hardware y Drivers:** Enlace directo con los catálogos oficiales de controladores certificados por el fabricante del sistema operativo para aplicar actualizaciones de bajo nivel sin riesgos de corrupción.
-* **Módulo de Ciclo de Vida de Software:** Rastreador de repositorios de software que audita firmas digitales y versiones instaladas frente a los últimos lanzamientos validados por los respectivos creadores.
-* **Motor de Higiene y Recuperación de Disco:** Algoritmo que calcula el peso de archivos prescindibles, elimina de forma controlada la basura digital y emite un reporte legible sobre el volumen de espacio recuperado.
+* **Actualizacion de Programas:** Revisa las aplicaciones instaladas en el equipo, comprueba cuales tienen una version mas reciente disponible y las actualiza de forma automatica y silenciosa, sin que el usuario tenga que descargar instaladores a mano.
+* **Actualizacion de Controladores y Componentes:** Busca e instala las versiones mas recientes de los controladores de video, sonido, tarjetas de red, procesador y perifericos, asegurando que el hardware funcione correctamente con el sistema operativo.
+* **Limpieza y Liberacion de Espacio en Disco:** Elimina de forma segura archivos temporales, vacia carpetas de descargas residuales del sistema, limpia la papelera de reciclaje y restablece la memoria de red, recuperando espacio valioso en el disco duro.
+* **Gestion Automatica de Permisos:** Identifica si la cuenta cuenta con permisos de administrador para realizar cambios en el sistema y, si es necesario, solicita la autorizacion correspondiente de manera controlada.
 
 ---
 
-## 🚦 Flujos Operativos y Modos de Ejecución
+## 3. Por Que es Importante
 
-La herramienta permite adaptarse a diferentes escenarios operacionales mediante un menú interactivo intuitivo o a través de directivas de ejecución desatendida:
+Mantener una computadora actualizada y limpia no es solo cuestion de orden, impacta directamente en el trabajo diario:
 
-| Modo Operativo | Alcance Funcional | Caso de Uso Recomendado |
+### Menos Errores y Cuelgues del Sistema
+La mayoria de los bloqueos repentinos y pantallas azules ocurren cuando los controladores de hardware son incompatibles o estan desactualizados. Mantener los componentes al dia garantiza estabilidad.
+
+### Mayor Seguridad
+Las empresas que desarrollan software corrigen continuamente fallos de seguridad en cada nueva version. Trabajar con programas desactualizados deja puertas abiertas a virus o accesos no autorizados. Esta herramienta ayuda a cerrar esas brechas a tiempo.
+
+### Mayor Rendimiento y Espacio Libre
+Los archivos temporales y la basura acumulada con el uso diario reducen la velocidad de lectura del disco y saturan el almacenamiento. La limpieza periódica mantiene la fluidez del equipo.
+
+### Ahorro de Tiempo de Soporte
+Elimina la necesidad de que el personal tecnico o el propio usuario dedique horas a tareas repetitivas de mantenimiento, estandarizando el proceso en una rutina rapida y confiable.
+
+---
+
+## 4. Modos de Operacion
+
+El sistema cuenta con un menu interactivo facil de entender que se adapta a las necesidades de cada momento:
+
+| Modo | Descripcion | Cuando Utilizarlo |
 | :--- | :--- | :--- |
-| **Mantenimiento Completo** | Controladores + Aplicaciones + Limpieza Profunda + Ecosistemas | Mantenimiento preventivo periódico (semanal o mensual). |
-| **Higiene del Sistema** | Purga de temporales, cachés residuales, papelera y DNS | Recuperación urgente de espacio en disco y optimización rápida. |
-| **Actualización de Drivers** | Búsqueda, descarga e instalación de firmware y controladores | Nuevos periféricos, fallos de hardware o actualización de sistema. |
-| **Actualización de Software** | Actualización masiva y silenciosa de aplicaciones de terceros | Asegurar que navegadores, herramientas y suites estén al día. |
-| **Modo Desatendido / CLI** | Ejecución por parámetros sin intervención de usuario | Despliegue en scripts automatizados o políticas corporativas. |
+| **Mantenimiento Completo** | Ejecuta la limpieza de disco, actualiza todos los programas y actualiza los controladores. | Recomendado para mantenimiento periodico (semanal o mensual). |
+| **Solo Limpieza del Sistema** | Borra temporales, vacia papelera y limpia la memoria de red. | Cuando el disco este lleno o se necesite liberar espacio de inmediato. |
+| **Solo Controladores** | Busca e instala actualizaciones de hardware y del sistema. | Si conectaste un dispositivo nuevo o experimentas fallos graficos o de red. |
+| **Solo Programas** | Actualiza unicamente las aplicaciones instaladas de uso diario. | Para poner al dia navegadores, herramientas de trabajo y utilidades. |
+| **Modo Desatendido** | Permite ejecutar tareas especificas por parametros sin mostrar menus. | Util para programaciones automaticas o administracion remota. |
 
 ---
 
-## 🚀 Guía de Despliegue y Puesta en Marcha
+## 5. Instrucciones de Uso
 
-### Requisitos Previos
-* Estación de trabajo con sistema operativo moderno configurado con permisos de administración.
-* Conectividad a Internet activa para la descarga de metadatos, paquetes de software y controladores actualizados.
-
-### Procedimiento de Ejecución
-
-#### Opción A: Lanzamiento Rápido Asistido
-1. Acceda a la carpeta del proyecto.
-2. Ejecute el archivo de inicialización rápida:
+### Opcion Recomendada: Inicio Rapido
+1. Abre la carpeta del proyecto.
+2. Haz doble clic sobre el archivo:
    ```plaintext
    ejecutar_actualizador.bat
    ```
-3. Si el sistema no detecta permisos de administración, se desplegará automáticamente la confirmación de seguridad para continuar con privilegios elevados.
-4. Seleccione en el menú interactivo el modo de mantenimiento requerido.
+3. Si el sistema solicita permisos de Administrador, acepta la confirmacion para que la herramienta pueda trabajar sobre controladores y archivos del sistema.
+4. Elige en pantalla la opcion de mantenimiento que deseas realizar.
 
-#### Opción B: Ejecución por Línea de Comandos (Directa o Automatizada)
-Para integraciones avanzadas o ejecuciones específicas desde terminal:
+### Opcion Avanzada: Ejecucion por Consola
+Si deseas automatizar la ejecucion o integrarla en rutinas programadas:
 
-* **Modo Interactivo Estándar:**
+* **Modo Interactivo:**
   ```plaintext
   actualizador_automatico
   ```
-* **Mantenimiento Integral Total (Desatendido):**
+* **Mantenimiento Completo Automatico:**
   ```plaintext
   actualizador_automatico --all
   ```
-* **Saneamiento Exclusivo de Disco (Desatendido):**
+* **Limpieza de Espacio Automatica:**
   ```plaintext
   actualizador_automatico --clean
   ```
 
 ---
 
-## 🗺️ Roadmap Estratégico y Futuras Integraciones
+## 6. Proximas Integraciones y Mejoras
 
-Como parte de la evolución planificada del proyecto hacia un estándar empresarial de gestión de endpoints, se contemplan las siguientes fases estratégicas:
+Como lider del proyecto, se ha establecido la siguiente ruta de evolucion para futuras versiones:
 
-### Fase 1: Panel de Control y Telemetría Centralizada (Dashboard Ejecutivo)
-* Desarrollo de una consola unificada para la monitorización simultánea de múltiples estaciones de trabajo.
-* Métricas en tiempo real de parches aplicados, espacio liberado y estado de actualización de la flota de equipos.
-
-### Fase 2: Integración con Plataformas de Seguridad SIEM / SOC
-* Exportación de trazas de auditoría en formatos estructurados estandarizados.
-* Alineación con marcos de cumplimiento normativo internacional (**ISO/IEC 27001**, **NIST CSF**, **CIS Controls**).
-
-### Fase 3: Despliegue Remoto y Orquestación Distribuida
-* Capacidad de invocación remota mediante agentes ligeros para redes corporativas sin requerir sesión activa del usuario final.
-* Políticas de ancho de banda adaptativas para evitar saturación de enlaces empresariales durante descargas masivas de controladores.
-
-### Fase 4: Analítica Predictiva de Fallos de Hardware
-* Análisis preventivo de telemetría de unidades de almacenamiento (S.M.A.R.T.) y temperaturas operativas previo a la aplicación de actualizaciones de firmware.
-* Detección temprana de incompatibilidades de hardware antes de aplicar nuevas versiones de controladores.
-
-### Fase 5: Mecanismos Automatizados de Respaldo y Rollback
-* Creación programática de instantáneas de recuperación previas a cualquier actualización crítica a nivel de kernel.
-* Reversión automática a la versión previa en caso de detectarse anomalías posteriores a la instalación de un controlador.
-
-### Fase 6: Sistema de Notificaciones Multicanal y Ventanas de Mantenimiento
-* Envío de resúmenes ejecutivos vía Webhooks hacia plataformas de mensajería colaborativa y correo electrónico institucional.
-* Programador inteligente de ventanas de inactividad que inhiba reinicios automáticos durante jornadas laborales.
+* **Panel Central de Estado:** Desarrollo de una vista visual para consultar el historial de mantenimientos y el estado de actualizacion de varios equipos en una misma red.
+* **Puntos de Restauracion Preventivos:** Creacion automatica de un respaldo previo antes de instalar controladores criticos, permitiendo deshacer cambios con un solo clic si algo falla.
+* **Programacion de Mantenimiento Nocturno:** Opcion para configurar que el mantenimiento se ejecute de madrugada o fuera del horario laboral, apagando el equipo al finalizar.
+* **Notificaciones y Reportes:** Envio de un resumen por correo electronico o mensaje notificando cuantos programas se actualizaron y cuanto espacio en disco se logro recuperar.
+* **Diagnostico de Salud del Disco:** Alertas tempranas si el disco duro presenta fallas de hardware antes de intentar actualizarlo.
 
 ---
 
-## 🔒 Políticas de Gobernanza y Mantenimiento
+## 7. Criterios de Seguridad y Buen Uso
 
-* **No Intrusividad:** El sistema jamás modifica configuraciones de usuario ajenas a las rutinas de higiene y actualización.
-* **Integridad de Datos:** Las rutinas de limpieza actúan estrictamente sobre directorios y ficheros con atributos temporales, garantizando la preservación total de los documentos y proyectos del usuario.
-* **Trazabilidad:** Cada fase de la ejecución emite respuestas y confirmaciones en tiempo real para conocimiento y auditoría del operador.
+* **Proteccion de Documentos:** La rutina de limpieza unicamente elimina archivos temporales del sistema y descargas intermedias de instalacion. Ningun archivo personal, documento de trabajo o carpeta de usuario es tocado ni modificado.
+* **Reinicios:** Si se actualizan controladores principales (como video o red), es recomendable reiniciar el equipo al finalizar para que el sistema operativo cargue los nuevos archivos.
 
 ---
 

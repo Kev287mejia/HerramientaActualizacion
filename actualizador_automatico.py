@@ -100,7 +100,7 @@ def formatear_tamano(bytes_totales):
 def paso_limpieza_sistema():
     """Limpia archivos temporales, caché de Windows Update, vacía papelera y purga DNS."""
     print("\n" + "=" * 65)
-    print("   🧹 LIMPIEZA PROFUNDA Y OPTIMIZACION DEL SISTEMA")
+    print("   LIMPIEZA PROFUNDA Y OPTIMIZACION DEL SISTEMA")
     print("=" * 65)
 
     total_bytes = 0
@@ -114,7 +114,7 @@ def paso_limpieza_sistema():
         total_bytes += b
         total_archivos += a
 
-    # 2. Temporales generales del sistema (Windows\Temp)
+    # 2. Temporales generales del sistema (Windows\\Temp)
     windir = os.environ.get("WINDIR", r"C:\Windows")
     temp_sistema = os.path.join(windir, "Temp")
     if os.path.exists(temp_sistema):
@@ -138,7 +138,7 @@ def paso_limpieza_sistema():
             ["powershell.exe", "-NoProfile", "-Command", "Clear-RecycleBin -Force -ErrorAction SilentlyContinue"],
             check=False
         )
-        print("    ✔ Papelera de reciclaje vaciada.")
+        print("    [+] Papelera de reciclaje vaciada.")
     except Exception:
         pass
 
@@ -146,14 +146,14 @@ def paso_limpieza_sistema():
     print("[*] Limpiando cache de resolucion DNS...")
     try:
         subprocess.run(["ipconfig", "/flushdns"], check=False, stdout=subprocess.DEVNULL)
-        print("    ✔ Cache DNS restablecida.")
+        print("    [+] Cache DNS restablecida.")
     except Exception:
         pass
 
     print("-" * 65)
-    print(f"✨ Limpieza completada con exito:")
-    print(f"   • Archivos temporales eliminados: {total_archivos}")
-    print(f"   • Espacio en disco recuperado:    {formatear_tamano(total_bytes)}")
+    print("Limpieza completada:")
+    print(f"   - Archivos temporales eliminados: {total_archivos}")
+    print(f"   - Espacio en disco recuperado:    {formatear_tamano(total_bytes)}")
     print("-" * 65)
 
 def paso_winget():
@@ -216,7 +216,7 @@ def paso_python_pip():
 
 def mostrar_banner():
     print("=" * 65)
-    print("    🚀 MANTENIMIENTO TOTAL: ACTUALIZADOR Y LIMPIADOR PC")
+    print("     MANTENIMIENTO TOTAL: ACTUALIZADOR Y LIMPIADOR PC")
     print("       Desarrollado con Amor por Kevin Mejia Montalvan")
     print("=" * 65)
 
