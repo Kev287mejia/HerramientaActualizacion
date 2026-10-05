@@ -1,0 +1,20 @@
+# Entornos de desarrollo y configuración local
+.agents/
+.vscode/
+.idea/
+*.log
+*.tmp
+*.bak
+Thumbs.db
+Desktop.ini
+
+# Artefactos de ejecución y cache de entorno
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.venv/
+env/
+
+# Archivos de proyectos paralelos no vinculados a esta herramienta
+crear_erp_sas_trello_auto.py
